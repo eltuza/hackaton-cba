@@ -1,0 +1,142 @@
+@font-face { font-family: Delicious; src: url('../font/Delicious-Roman.otf'); } 
+@font-face { font-family: Delicious; font-weight: bold; src: url('../font/Delicious-Bold.otf'); }
+
+/* Makeshift CSS Reset */
+{
+	margin: 0;
+	padding: 0;
+}
+
+/* Tell the browser to render HTML 5 elements as block */
+header, footer, aside, nav, article {
+	display: block;
+}
+
+body {
+  margin: 0px;
+  padding: 20px;
+}
+
+p {
+	padding-bottom: 22px;
+}
+  
+#container {
+	margin: 0 auto;
+	width: 900px;
+	background: #fff;
+}
+  
+#app-name {
+  padding-left: 40px;
+  background: url(../image/world-map.png) no-repeat scroll 0 0 transparent;
+  background-size: 38px;
+  font-family: Delicious, sans-serif;
+  color: #008C00;
+}
+
+#container #map-canvas {
+  width: 500px;
+  height: 300px;
+}
+
+#container #message {
+  font-weight: bold;
+  color: #aa0000;
+}
+
+#container #loading-icon {
+  position: absolute;
+  left: 263px;
+  top: 40px;
+  display: none;
+}
+  
+#sortable {
+  font-family: Helvetica, sans-serif;
+  list-style-type: none;
+  margin:auto;
+}
+  
+.column {
+  width: 540px;
+  float: left; 
+  padding-bottom: 100px;
+}
+
+.portlet {
+  margin: 0 1em 1em 0;
+}
+
+.portlet-header {
+  margin: 0.3em;
+  padding-bottom: 4px;
+  padding-left: 0.2em;
+}
+
+.portlet-header .ui-icon {
+  float: right;
+}
+
+.portlet-content {
+  padding: 0.4em;
+}
+
+.ui-sortable-placeholder {
+  border: 1px dotted black;
+  visibility: visible !important;
+  height: 50px !important;
+}
+
+.ui-sortable-placeholder * {
+  visibility: hidden;
+}
+
+#sortable li { 
+  margin: 3px 3px 3px 0;
+  float: left;
+  text-align: center;
+}
+  
+#timeline {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  width: 300px;
+  max-height: 500px;
+  overflow:auto;
+}
+
+#timeline li { 
+  margin: 3px;
+  padding: 0.4em;
+  font-size: .5em;
+  width:265px;
+}
+
+#header {
+	background: #C3D9FF;
+	padding: 20px;
+}
+  
+#portal-content {
+	clear: left;
+	padding: 20px;
+}
+
+#portal-content h2 {
+	color:#000;
+	font-size: 160%;
+	margin: 0 0 .5em;
+}
+
+#useful-links {
+  padding: 0;
+}
+
+#useful-links li {
+  font-family: Helvetica, sans-serif;
+  list-style-type: none;
+  margin:auto;
+  font-size: .8em;
+}
