@@ -110,7 +110,22 @@ p {
 #timeline li { 
   margin: 3px;
   padding: 0.4em;
-  font-size: .5em;
+  font-size: .8em;
+}
+
+#translatedTimeline {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  width: 300px;
+  max-height: 500px;
+  overflow:auto;
+}
+
+#translatedTimeline li {
+  margin: 3px;
+  padding: 0.4em;
+  font-size: .8em;
   width:265px;
 }
 

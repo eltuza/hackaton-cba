@@ -17,7 +17,12 @@
     <!-- jQuery UI JavaScript -->
     <script type="text/javascript" src="jquery-ui/js/jquery-1.4.2.min.js"></script>
     <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.5.custom.min.js"></script>
-    
+    <script type="text/javascript" src="http://www.google.com/jsapi">
+    </script>
+    <script type="text/javascript">
+
+    google.load("language", "1");
+    </script>
     <!-- Application JavaScript -->
     <script type="text/javascript" src="js/Base.js"></script>
     <script type="text/javascript" src="js/TwitterMapFacade.js"></script>
@@ -42,6 +47,11 @@
     	<section id="portal-content">
   	  
     	  <div class="column">
+            <div class="portlet">
+                <div class="portlet-header">Tweets!</div>
+                <div class="portlet-content"><ol id="timeline">
+            </ol></div>
+            </div>
 
         	<div class="portlet">
         		<div class="portlet-header">Map!</div>
@@ -59,11 +69,11 @@
         </div>
 
         <div class="column" style="width: 320px">
-        	<div class="portlet">
-        		<div class="portlet-header">Tweets!</div>
-        		<div class="portlet-content"><ol id="timeline">
+            <div class="portlet">
+                <div class="portlet-header">Tuits!</div>
+                <div class="portlet-content"><ol id="translatedTimeline">
             </ol></div>
-        	</div>
+            </div>
         	<div class="portlet">
         		<div class="portlet-header">Useful links!</div>
         		<div class="portlet-content">

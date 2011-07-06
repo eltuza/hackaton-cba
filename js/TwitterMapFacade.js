@@ -66,6 +66,15 @@
       var item = tweets[i];
 
       if (item.geo) {
+        
+        GLB.TwittTranslate.translateTweet(item.text, function(tweet) {
+            var newTweet = jQuery("<li class=\"ui-widget-content\">"+tweet+"</li>");
+            newTweet.hide();
+            jQuery("#translatedTimeline").prepend(newTweet);
+
+            newTweet.show("highlight",{},500);
+
+        });
         var x = item.geo.coordinates[0];
         var y = item.geo.coordinates[1];
 
@@ -94,4 +103,6 @@
       }
     }
   };
+
+
 }());
