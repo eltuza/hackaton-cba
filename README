@@ -1,0 +1,12 @@
+Small app we modified along with Mateo at Globant Cordoba Hackaton.
+
+We took a base app that was provided, which updated from twitter the tweets
+with location information, and added a pin in a world map from where each tweet
+came from.
+
+Our addition was to make use of Google's translation API to detect each
+message's language and translate it automatically to spanish.
+
+The tweets were shown in a new column next to the original one.
+
+
